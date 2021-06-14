@@ -11,26 +11,26 @@ const Stack = createStackNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator initialRouteName="Home">
         <Stack.Screen
           name="Home"
           component={HomeScreen}
           options={{ title: 'Welcome' }}
         />
         <Stack.Screen 
-          name="DeadLift Screen"
+          name="DeadLift"
           component={PercentageScreen}
         />
         <Stack.Screen 
-          name="Squat Screen"
+          name="Squat"
           component={PercentageScreen}
         />
         <Stack.Screen 
-          name="Bench Press Screen"
+          name="Bench Press"
           component={PercentageScreen}
         />
         <Stack.Screen 
-          name="Shoulder Press Screen"
+          name="Shoulder Press"
           component={PercentageScreen}
         />
       </Stack.Navigator>
